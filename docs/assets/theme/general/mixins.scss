@@ -1,0 +1,6 @@
+@mixin flex($segment, $size) {
+  flex: 0 0 $size;
+  #{$segment}: $size;
+  min-#{$segment}: $size;
+  max-#{$segment}: $size;
+}
