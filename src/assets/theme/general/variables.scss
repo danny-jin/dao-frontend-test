@@ -1,0 +1,77 @@
+// Colors
+$buttercup: #F0B90B;
+$mountain-meadow: #0ECB81;
+$brick-red: #CF304A;
+$buddha-gold: #C99400;
+$mako: #474D57;
+$shark: #1E2329;
+$regent-gray: #848e9ce6;
+$athens-gray: #EAECEF;
+$saffron: #F8D12F;
+$ebony-cla: #212833;
+$mustard: #FFE251;
+$golden-dream: #EDC423;
+$raven: #707A8A;
+
+$theme-colors: (
+  primary: $buttercup,
+  success: $mountain-meadow,
+  danger: $brick-red,
+  warning: $buddha-gold,
+  info: $mako,
+  dark: $shark
+);
+
+// Headings
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base * 1;
+$font-size-sm: $font-size-base * .955;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.125;
+$headings-font-weight: 700;
+$font-weight-bolder: 600;
+
+// Spacing
+$pixel-spacer: 5px !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 1 through 100 {
+  $spacers: map-merge($spacers, (
+    $i * 5: ($i * $pixel-spacer)
+  ));
+}
+
+// Buttons
+$btn-padding-x: .5rem;
+$btn-padding-y: .25rem;
+$btn-font-size: 14px;
+$btn-line-height: 1.6;
+$btn-font-weight: 700;
+$btn-border-width: 0;
+
+// Cards
+$card-border-radius: 3px;
+$card-border-width: 0;
+
+// Forms
+$form-group-margin-bottom: 1.25rem;
+$input-padding-x: .5rem;
+$input-padding-y: 0;
+$input-line-height: 1.125rem;
+$input-font-size: .875rem;
+$input-border-width: 0;
+$input-height: 38px;
+$input-bg: white;
+$input-placeholder-color: $regent-gray;
+
+// Breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  sm: 567px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);

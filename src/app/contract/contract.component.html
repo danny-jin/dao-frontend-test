@@ -1,0 +1,14 @@
+<section class="w-100 h-100 d-flex justify-content-center align-items-center">
+  <div class="d-flex flex-column shadow-primary p-20">
+    <form class="width-300" [formGroup]="form">
+      <button class="btn btn-danger w-100 mb-30" [disabled]="authState !== null && authState.wallet !== null" (click)="connectMetamask()">Connect Metamask</button>
+      <div class="w-100 mb-30">
+        <app-text-input type="number" id="{{ prefix }}_gasLimit" label="Gas Limit" formControlName="gasLimit"></app-text-input>
+      </div>
+      <div class="w-100 mb-30">
+        <app-text-input type="number" id="{{ prefix }}_amount" label="Amount" formControlName="amount"></app-text-input>
+      </div>
+      <button class="btn btn-primary w-100 mb-30" (click)="payMe()">Pay me</button>
+    </form>
+  </div>
+</section>

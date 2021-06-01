@@ -1,0 +1,48 @@
+form {
+
+  label.form-label {
+    transition: ease box-shadow .3s;
+  }
+
+  label.form-label .wrapper {
+    display: flex;
+    padding: 0 8px;
+    border: solid 1px $athens-gray;
+    border-radius: 4px;
+    &:focus, &:hover, &:active {
+      border: solid 1px $buttercup;
+    }
+  }
+
+  .invalid {
+    label.form-label .wrapper {
+      border: solid 1px $brick-red;
+    }
+  }
+
+  label.form-label {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .form-control[readonly] {
+    background-color: white;
+  }
+
+  .form-group {
+    background-color: white;
+    textarea.form-control, select.form-control, input.form-control {
+      height: 40px;
+      padding: 0;
+      color: $shark;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.invalid {
+  mat-checkbox {
+    border: solid 1px $brick-red;
+  }
+}

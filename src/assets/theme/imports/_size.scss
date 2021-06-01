@@ -1,0 +1,44 @@
+@for $i from 0 through 80 {
+  .line-height-#{$i * 5} {
+    line-height: #{$i * 5}px !important;
+  }
+  .height-#{$i * 5} {
+    height: #{$i * 5}px !important;
+  }
+  .height-n#{$i * 5} {
+    height: calc(100% - #{$i * 5}px) !important;
+  }
+  .height-50n#{$i * 5} {
+    height: calc(50% - #{$i * 5}px) !important;
+  }
+  .min-height-#{$i * 5} {
+    min-height: #{$i * 5}px !important;
+  }
+  .max-height-#{$i * 5} {
+    max-height: #{$i * 5}px !important;
+  }
+  .width-#{$i * 5} {
+    width: #{$i * 5}px !important;
+  }
+  .width-n#{$i * 5} {
+    width: calc(100% - #{$i * 5}px) !important;
+  }
+  .width-50n#{$i * 5} {
+    width: calc(50% - #{$i * 5}px) !important;
+  }
+  .min-width-#{$i * 5} {
+    min-width: #{$i * 5}px !important;
+  }
+  .max-width-#{$i * 5} {
+    max-width: #{$i * 5}px !important;
+  }
+}
+
+@for $i from 0 through 20 {
+  .h-#{$i * 5} {
+    height: #{$i * 5%} !important;
+  }
+  .w-#{$i * 5} {
+    width: #{$i * 5%} !important;
+  }
+}
